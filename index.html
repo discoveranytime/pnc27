@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("pnc27-theme");if(_t==="light"||_t==="dark")docu
 :root{
   --bg0:#06070d; --bg1:#000000;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#f1b5fc; --sky-deep:#a21caf;
-  --teal:#f5cbfd; --teal-deep:#3b0764;
-  --org:#c522d5; --org-deep:#35065a;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#fbebfe;
+  --sky:#e11d48; --sky-deep:#7e1028;
+  --teal:#818cf8; --teal-deep:#172bf2;
+  --org:#e11d48; --org-deep:#7e1028;
+  --amber:#818cf8; --rose:#e11d48; --cyan:#818cf8;
   --card:#000000; --card2:#000000;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#f1b5fc 5%,#f5cbfd 50%,#c522d5 95%);
+  --grad:linear-gradient(100deg,#fcb5c5 5%,#cbd0fd 50%,#d52249 95%);
   --ongrad:#000000;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(162, 28, 175,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(55, 6, 94,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(59, 7, 100,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(175,28,60,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(6,14,94,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(7,15,100,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(251,113,143,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(162, 28, 175,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(55, 6, 94,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(59, 7, 100,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(175,28,60,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(6,14,94,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(7,15,100,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#76247e; --sky-deep:#320656;
-  --teal:#37065e; --teal-deep:#2b054a;
-  --org:#76247e; --org-deep:#320656;
-  --amber:#b45309; --rose:#e11d48; --cyan:#4d7c0f;
+  --sky:#8c0d29; --sky-deep:#25030b;
+  --teal:#1a2ff9; --teal-deep:#04139f;
+  --org:#8c0d29; --org-deep:#25030b;
+  --amber:#8c0d29; --rose:#1a2ff9; --cyan:#8c0d29;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#76247e,#37065e,#8b2395);
+  --grad:linear-gradient(100deg,#7e2438,#060e5e,#95233c);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -84,7 +84,7 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
 nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#000000;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,12 +129,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(38,57,249,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(38,57,249,.55)}70%{box-shadow:0 0 0 12px rgba(38,57,249,0)}100%{box-shadow:0 0 0 0 rgba(38,57,249,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.o{background:rgba(61,78,250,.12);color:var(--org);border:1px solid rgba(61,78,250,.35)}
+.kv .k.a{background:rgba(38,57,249,.12);color:var(--amber);border:1px solid rgba(38,57,249,.35)}
+.kv .k.g{background:rgba(251,113,143,.12);color:var(--rose);border:1px solid rgba(251,113,143,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(162, 28, 175,.10),transparent 70%),#000000;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(175,28,60,.10),transparent 70%),#000000;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,14 +208,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(38,57,249,.4);background:rgba(38,57,249,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -231,7 +231,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(38,57,249,.06);border:1px solid rgba(38,57,249,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -242,9 +242,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-known .level{background:rgba(38,57,249,.1);color:var(--amber);border:1px solid rgba(38,57,249,.4)}
+.lvl-theory .level{background:rgba(61,78,250,.1);color:var(--org);border:1px solid rgba(61,78,250,.4)}
+.lvl-unknown .level{background:rgba(251,113,143,.1);color:var(--rose);border:1px solid rgba(251,113,143,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +265,10 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
+
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +281,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(251,113,143,.05);border:1px solid rgba(251,113,143,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -322,7 +322,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -333,6 +333,25 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
 .flowseq{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
+.flowseq1{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
+.seqr4{animation:seqGlow 4.5s ease-in-out 2.7s infinite}
+.seqr5{animation:seqGlow 4.5s ease-in-out 3.6s infinite}
+@keyframes leakfall{0%{transform:translateY(0);opacity:0}25%{opacity:1}100%{transform:translateY(46px);opacity:0}}
+.leak{animation:leakfall 3.2s ease-in infinite}
+@keyframes porepulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.12);opacity:1}}
+.porepulse{transform-box:fill-box;transform-origin:center;animation:porepulse 3.2s ease-in-out infinite}
+@keyframes peptravel{0%{opacity:0}100%{opacity:1}}
+.rate-h{display:flex;align-items:center;gap:.6rem;justify-content:center;margin:2.6rem auto 0;max-width:640px;padding:.9rem 1.2rem;border:1px solid var(--line);border-radius:14px;background:rgba(213,34,73,.08);font-size:1.25rem;font-weight:800;color:var(--ink)}
+.avsb{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0}
+@media(max-width:760px){.avsb{grid-template-columns:1fr}}
+.vscard{border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;background:rgba(255,255,255,.02)}
+.vscard h3{margin:.2rem 0 .6rem;font-size:1.05rem}
+.vscard ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--muted);font-size:.94rem;line-height:1.65}
+.vstag{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.28rem .7rem;border-radius:999px}
+.vstag.a{background:rgba(213,34,73,.16);color:#fcb5c5}
+.vstag.b{background:rgba(38,57,249,.14);color:#2639f9}
+h3.sech{font-size:1.35rem;margin:2.2rem 0 .4rem;color:var(--ink)}
+h3.sech .kicker{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:800;margin-bottom:.35rem}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
@@ -348,7 +367,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #000000), var(--card, #000000)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #7682fb), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -360,11 +379,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #2639f9); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #7682fb);
+  box-shadow: 0 0 10px var(--mpc1, #7682fb);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +417,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #000000;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #7682fb), var(--acc2, #a3e635), var(--acc3, #3d4efa));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -419,23 +438,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #2639f9); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #2639f9); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #2639f9); background: rgba(38,57,249,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #000000;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #7682fb), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #2639f9;
+  border: 1px dashed rgba(38,57,249,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -443,17 +462,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #2639f9); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #7682fb), var(--acc2, #a3e635), var(--acc3, #3d4efa));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(38,57,249,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -490,7 +509,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f1b5fc"/><stop offset="50%" stop-color="#f5cbfd"/><stop offset="100%" stop-color="#c522d5"/>
+      <stop offset="0%" stop-color="#fcb5c5"/><stop offset="50%" stop-color="#cbd0fd"/><stop offset="100%" stop-color="#d52249"/>
     </linearGradient>
   </defs>
 </svg>
@@ -515,14 +534,17 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Origin Story</a>
   <a href="#ch3"><span class="n">03</span>How It Might Work</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>What People Say</a>
-  <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>Community Reports</a>
+  <a href="#ch6"><span class="n">06</span>Head-to-Head</a>
+  <a href="#ch7"><span class="n">07</span>Potential Benefits</a>
+  <a href="#ch8"><span class="n">08</span>Who It May Suit</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
-<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a></div></nav>
+<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · A vs B</a><a href="#ch7">07 · Benefits</a><a href="#ch8">08 · Suit</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a></div></nav>
 
 <header class="hero">
   <div class="badge"><span class="dot"></span>p53-derived peptide · membrane-attack research · lab studies only</div>
@@ -548,7 +570,7 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">01</span>The peptide</span>
   <h2>What <span class="hl">PNC-27</span> actually is</h2>
   <p class="lede">Two segments stitched together: <strong>a grip from the p53 protein</strong> and <strong>a membrane-crossing carrier</strong>. The combination does something neither part does alone — in lab dishes.</p>
-  <div class="diagram reveal"><svg viewBox="0 0 640 220" role="img" aria-label="PNC-27 as two fused segments: a p53 grip and a penetratin carrier"><text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">PNC-27 · TWO SEGMENTS, ONE TRICK</text><text x="40" y="43" fill="#a9b1c9" font-size="12" font-weight="800">p53 GRIP SEGMENT · binds HDM-2 · 15 LINKS</text><circle cx="40.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="80.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="120.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="160.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="200.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="240.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="280.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="320.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="360.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="400.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="440.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="480.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="520.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="560.0" cy="60" r="6.5" fill="#c522d5"/><circle cx="600.0" cy="60" r="6.5" fill="#c522d5"/><text x="40" y="95" fill="#a9b1c9" font-size="12" font-weight="800">PENETRATIN CARRIER · crosses membranes · 16 LINKS</text><circle cx="40.0" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="77.3" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="114.7" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="152.0" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="189.3" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="226.7" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="264.0" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="301.3" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="338.7" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="376.0" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="413.3" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="450.7" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="488.0" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="525.3" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="562.7" cy="112" r="6.5" fill="#f5cbfd"/><circle cx="600.0" cy="112" r="6.5" fill="#f5cbfd"/><text x="320" y="206" fill="#7f88a5" font-size="12" text-anchor="middle">stitched together — neither part bursts cells alone</text></svg><div class="cap">Two segments, two jobs: the p53 piece latches onto HDM-2; the penetratin piece ferries it across membranes. Together, in lab dishes, they punch pores.</div></div><div class="grid3">
+  <div class="diagram reveal"><svg viewBox="0 0 640 220" role="img" aria-label="PNC-27 as two fused segments: a p53 grip and a penetratin carrier"><text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">PNC-27 · TWO SEGMENTS, ONE TRICK</text><text x="40" y="43" fill="#a9b1c9" font-size="12" font-weight="800">p53 GRIP SEGMENT · binds HDM-2 · 15 LINKS</text><circle cx="40.0" cy="60" r="6.5" fill="#d52249"/><circle cx="80.0" cy="60" r="6.5" fill="#d52249"/><circle cx="120.0" cy="60" r="6.5" fill="#d52249"/><circle cx="160.0" cy="60" r="6.5" fill="#d52249"/><circle cx="200.0" cy="60" r="6.5" fill="#d52249"/><circle cx="240.0" cy="60" r="6.5" fill="#d52249"/><circle cx="280.0" cy="60" r="6.5" fill="#d52249"/><circle cx="320.0" cy="60" r="6.5" fill="#d52249"/><circle cx="360.0" cy="60" r="6.5" fill="#d52249"/><circle cx="400.0" cy="60" r="6.5" fill="#d52249"/><circle cx="440.0" cy="60" r="6.5" fill="#d52249"/><circle cx="480.0" cy="60" r="6.5" fill="#d52249"/><circle cx="520.0" cy="60" r="6.5" fill="#d52249"/><circle cx="560.0" cy="60" r="6.5" fill="#d52249"/><circle cx="600.0" cy="60" r="6.5" fill="#d52249"/><text x="40" y="95" fill="#a9b1c9" font-size="12" font-weight="800">PENETRATIN CARRIER · crosses membranes · 16 LINKS</text><circle cx="40.0" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="77.3" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="114.7" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="152.0" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="189.3" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="226.7" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="264.0" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="301.3" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="338.7" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="376.0" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="413.3" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="450.7" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="488.0" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="525.3" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="562.7" cy="112" r="6.5" fill="#cbd0fd"/><circle cx="600.0" cy="112" r="6.5" fill="#cbd0fd"/><text x="320" y="206" fill="#7f88a5" font-size="12" text-anchor="middle">stitched together — neither part bursts cells alone</text></svg><div class="cap">Two segments, two jobs: the p53 piece latches onto HDM-2; the penetratin piece ferries it across membranes. Together, in lab dishes, they punch pores.</div></div><div class="grid3">
     <div class="card sky reveal"><h3>Borrowed from p53</h3><p>p53 is the <strong>“guardian of the genome”</strong> — a protein that stops damaged cells turning cancerous. PNC-27 borrows its HDM-2-grabbing segment.</p></div>
     <div class="card teal reveal"><h3>A carrier that crosses walls</h3><p>The second segment (<strong>penetratin</strong>) ferries cargo across cell membranes — the delivery truck for the grip.</p></div>
     <div class="card org reveal"><h3>The cancer-only trick</h3><p>In lab studies, <strong>cancer cells display HDM-2 in their outer membrane</strong> while normal cells don’t — that’s the selectivity hypothesis.</p></div>
@@ -566,22 +588,22 @@ mini-poll { display: block; }
   <p class="lede">A tumor-suppressor’s grip, bolted to a membrane-crossing carrier — and a killing method nobody expected.</p>
   <div class="diagram reveal">
     <svg viewBox="0 0 640 220" role="img" aria-label="Timeline of PNC-27 research">
-      <line x1="70" y1="120" x2="570" y2="120" stroke="#211e2a" stroke-width="3"/>
-<circle cx="70" cy="120" r="16" fill="none" stroke="#f1b5fc" stroke-width="2" class="ringp"/>
-        <circle cx="70" cy="120" r="8" fill="#f1b5fc"/>
-        <text x="70" y="88" fill="#f1b5fc" font-size="12" font-weight="800" text-anchor="middle">1979–90s</text>
+      <line x1="70" y1="120" x2="570" y2="120" stroke="#1e1f2a" stroke-width="3"/>
+<circle cx="70" cy="120" r="16" fill="none" stroke="#fcb5c5" stroke-width="2" class="ringp"/>
+        <circle cx="70" cy="120" r="8" fill="#fcb5c5"/>
+        <text x="70" y="88" fill="#fcb5c5" font-size="12" font-weight="800" text-anchor="middle">1979–90s</text>
         <text x="70" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">p53, the guardian</text>
-<circle cx="237" cy="120" r="16" fill="none" stroke="#f5cbfd" stroke-width="2" class="ringp"/>
-        <circle cx="237" cy="120" r="8" fill="#f5cbfd"/>
-        <text x="237" y="88" fill="#f5cbfd" font-size="12" font-weight="800" text-anchor="middle">2000s</text>
+<circle cx="237" cy="120" r="16" fill="none" stroke="#cbd0fd" stroke-width="2" class="ringp"/>
+        <circle cx="237" cy="120" r="8" fill="#cbd0fd"/>
+        <text x="237" y="88" fill="#cbd0fd" font-size="12" font-weight="800" text-anchor="middle">2000s</text>
         <text x="237" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">The PNC concept</text>
-<circle cx="403" cy="120" r="16" fill="none" stroke="#c522d5" stroke-width="2" class="ringp"/>
-        <circle cx="403" cy="120" r="8" fill="#c522d5"/>
-        <text x="403" y="88" fill="#c522d5" font-size="12" font-weight="800" text-anchor="middle">2008–2010s</text>
+<circle cx="403" cy="120" r="16" fill="none" stroke="#d52249" stroke-width="2" class="ringp"/>
+        <circle cx="403" cy="120" r="8" fill="#d52249"/>
+        <text x="403" y="88" fill="#d52249" font-size="12" font-weight="800" text-anchor="middle">2008–2010s</text>
         <text x="403" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">PNC-27’s pore trick</text>
-<circle cx="570" cy="120" r="16" fill="none" stroke="#f1b5fc" stroke-width="2" class="ringp"/>
-        <circle cx="570" cy="120" r="8" fill="#f1b5fc"/>
-        <text x="570" y="88" fill="#f1b5fc" font-size="12" font-weight="800" text-anchor="middle">2010s–now</text>
+<circle cx="570" cy="120" r="16" fill="none" stroke="#fcb5c5" stroke-width="2" class="ringp"/>
+        <circle cx="570" cy="120" r="8" fill="#fcb5c5"/>
+        <text x="570" y="88" fill="#fcb5c5" font-size="12" font-weight="800" text-anchor="middle">2010s–now</text>
         <text x="570" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Still in the dish</text>
       <text x="320" y="208" fill="#7f88a5" font-size="12" text-anchor="middle">From the guardian protein to a membrane-bursting lab phenomenon — and no further.</text>
     </svg>
@@ -603,24 +625,24 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Proposed four-step mechanism of PNC-27">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#f1b5fc" stroke-width="2"/>
-        <circle cx="84" cy="86" r="18" fill="none" stroke="#f1b5fc" stroke-width="2" class="ringp"/>
-        <text x="84" y="118" fill="#f1b5fc">1 · APPROACH</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#fcb5c5" stroke-width="2"/>
+        <circle cx="84" cy="86" r="18" fill="none" stroke="#fcb5c5" stroke-width="2" class="ringp"/>
+        <text x="84" y="118" fill="#fcb5c5">1 · APPROACH</text>
         <text x="84" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Finds the</text>
         <text x="84" y="160" fill="#a9b1c9" font-size="11" font-weight="600">handle</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#f5cbfd" stroke-width="2"/>
-        <circle cx="236" cy="86" r="18" fill="none" stroke="#f5cbfd" stroke-width="2" class="ringp"/>
-        <text x="236" y="118" fill="#f5cbfd">2 · LATCH</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#cbd0fd" stroke-width="2"/>
+        <circle cx="236" cy="86" r="18" fill="none" stroke="#cbd0fd" stroke-width="2" class="ringp"/>
+        <text x="236" y="118" fill="#cbd0fd">2 · LATCH</text>
         <text x="236" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Grips</text>
         <text x="236" y="160" fill="#a9b1c9" font-size="11" font-weight="600">HDM-2</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#c522d5" stroke-width="2"/>
-        <circle cx="388" cy="86" r="18" fill="none" stroke="#c522d5" stroke-width="2" class="ringp"/>
-        <text x="388" y="118" fill="#c522d5">3 · CLUSTER</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#d52249" stroke-width="2"/>
+        <circle cx="388" cy="86" r="18" fill="none" stroke="#d52249" stroke-width="2" class="ringp"/>
+        <text x="388" y="118" fill="#d52249">3 · CLUSTER</text>
         <text x="388" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Pores</text>
         <text x="388" y="160" fill="#a9b1c9" font-size="11" font-weight="600">assemble</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#f1b5fc" stroke-width="2"/>
-        <circle cx="540" cy="86" r="18" fill="none" stroke="#f1b5fc" stroke-width="2" class="ringp"/>
-        <text x="540" y="118" fill="#f1b5fc">4 · RUPTURE</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#000000" stroke="#fcb5c5" stroke-width="2"/>
+        <circle cx="540" cy="86" r="18" fill="none" stroke="#fcb5c5" stroke-width="2" class="ringp"/>
+        <text x="540" y="118" fill="#fcb5c5">4 · RUPTURE</text>
         <text x="540" y="144" fill="#a9b1c9" font-size="11" font-weight="600">The cell</text>
         <text x="540" y="160" fill="#a9b1c9" font-size="11" font-weight="600">bursts</text>
       </g>
@@ -635,6 +657,115 @@ mini-poll { display: block; }
   </div>  <div class="kv reveal"><span class="k s">The handle</span><p>PNC-27 encounters <strong>HDM-2 sitting in a cancer cell’s outer membrane</strong> — where it shouldn’t be, in healthy biology.</p></div>
   <div class="kv reveal"><span class="k t">The latch</span><p>The p53-derived segment <strong>locks onto its target</strong> — the handshake it was built for.</p></div>
   <div class="kv reveal"><span class="k o">The demolition</span><p>Bound peptides clump into <strong>pore complexes</strong>; membrane integrity fails and the cell <strong>lyses</strong>, spilling its contents.</p></div><div class="plain reveal"><div class="plabel">Plain English</div><p>The chain: <strong>approach → latch → cluster → rupture</strong>. Not persuasion — demolition.</p></div>
+<h3 class="sech"><span class="kicker">The membrane attack, frame by frame</span>The attack, up close</h3>
+  <p class="lede">PNC-27 never needs to reach the nucleus for this mechanism. The action happens <strong>at the membrane</strong> — and normal cells, in these studies, offer no handle.</p>
+  <div class="diagram reveal"><svg viewBox="0 0 640 400" role="img" aria-label="PNC-27 attacking a cancer cell membrane while a normal cell is ignored: approach, dock on membrane HDM-2, pores assemble at one spot, lysis">
+    <text x="20" y="26" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">CANCER CELL · HAS THE HANDLE</text>
+    <text x="345" y="26" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">NORMAL CELL · NO HANDLE</text>
+    <!-- step rail -->
+    <g font-size="10" font-weight="800" text-anchor="middle">
+      <circle cx="28" cy="180" r="12" fill="#000" stroke="#fcb5c5" stroke-width="1.5" class="seqr1"/><text x="28" y="184" fill="#fcb5c5">1</text>
+      <text x="28" y="200" fill="#a9b1c9" font-size="9">approach</text>
+      <circle cx="28" cy="218" r="12" fill="#000" stroke="#cbd0fd" stroke-width="1.5" class="seqr2"/><text x="28" y="222" fill="#cbd0fd">2</text>
+      <text x="28" y="238" fill="#a9b1c9" font-size="9">dock</text>
+      <circle cx="28" cy="256" r="12" fill="#000" stroke="#d52249" stroke-width="1.5" class="seqr3"/><text x="28" y="260" fill="#d52249">3</text>
+      <text x="28" y="276" fill="#a9b1c9" font-size="9">pore</text>
+      <circle cx="28" cy="294" r="12" fill="#000" stroke="#fcb5c5" stroke-width="1.5" class="seqr4"/><text x="28" y="298" fill="#fcb5c5">4</text>
+      <text x="28" y="314" fill="#a9b1c9" font-size="9">lysis</text>
+    </g>
+    <!-- cancer cell -->
+    <ellipse cx="180" cy="248" rx="102" ry="96" fill="#101221" stroke="#fcb5c5" stroke-width="2.5"/>
+    <ellipse cx="180" cy="248" rx="94" ry="88" fill="none" stroke="#fcb5c5" stroke-width="1" opacity=".45"/>
+    <text x="180" y="212" fill="#7f88a5" font-size="11" text-anchor="middle">CYTOPLASM</text>
+    <ellipse cx="180" cy="268" rx="34" ry="26" fill="#0a0b14" stroke="#7f88a5" stroke-width="1.5"/>
+    <text x="180" y="272" fill="#7f88a5" font-size="10" text-anchor="middle">NUCLEUS</text>
+    <ellipse cx="128" cy="316" rx="16" ry="10" fill="#0a0b14" stroke="#7f88a5" stroke-width="1.5"/>
+    <text x="128" y="319" fill="#7f88a5" font-size="8" text-anchor="middle">MITO</text>
+    <!-- HDM-2 blobs on cancer membrane -->
+    <g class="seqr2">
+      <circle cx="118" cy="170" r="8" fill="#2639f9" stroke="#0a0b14" stroke-width="2"/>
+      <circle cx="180" cy="154" r="8" fill="#2639f9" stroke="#0a0b14" stroke-width="2"/>
+      <circle cx="242" cy="170" r="8" fill="#2639f9" stroke="#0a0b14" stroke-width="2"/>
+    </g>
+    <text x="52" y="118" fill="#2639f9" font-size="11" font-weight="800">HDM-2</text>
+    <text x="52" y="132" fill="#7f88a5" font-size="10">on the membrane</text>
+    <!-- PNC-27 peptides approaching -->
+    <text x="52" y="88" fill="#a9b1c9" font-size="11">PNC-27 approaches</text>
+    <g>
+      <circle r="7" fill="#d52249"><animateMotion dur="2.6s" repeatCount="indefinite" path="M52 96 C70 120, 92 142, 116 166"/></circle>
+      <circle r="5" fill="#cbd0fd"><animateMotion dur="2.6s" repeatCount="indefinite" path="M52 96 C70 120, 92 142, 116 166" begin="-.4s"/></circle>
+      <circle r="7" fill="#d52249"><animateMotion dur="2.6s" repeatCount="indefinite" path="M262 64 C240 96, 212 124, 182 150" begin="-.9s"/></circle>
+      <circle r="5" fill="#cbd0fd"><animateMotion dur="2.6s" repeatCount="indefinite" path="M262 64 C240 96, 212 124, 182 150" begin="-1.3s"/></circle>
+    </g>
+    <!-- pore assembly at one localized patch -->
+    <g class="porepulse" stroke="#fcb5c5" stroke-width="3" fill="none">
+      <circle cx="180" cy="154" r="20"/>
+      <circle cx="180" cy="154" r="13" stroke="#cbd0fd" stroke-width="2"/>
+    </g>
+    <g class="seqr3">
+      <circle cx="166" cy="146" r="4.5" fill="#d52249"/><circle cx="194" cy="146" r="4.5" fill="#2639f9"/>
+      <circle cx="166" cy="164" r="4.5" fill="#cbd0fd"/><circle cx="194" cy="164" r="4.5" fill="#d52249"/>
+    </g>
+    <!-- leak dots through the pore -->
+    <g fill="#cbd0fd" opacity=".85">
+      <circle class="leak" cx="174" cy="178" r="3" style="animation-delay:0s"/>
+      <circle class="leak" cx="186" cy="178" r="3" style="animation-delay:1.1s"/>
+      <circle class="leak" cx="180" cy="178" r="3" style="animation-delay:2.2s"/>
+    </g>
+    <text x="180" y="366" fill="#7f88a5" font-size="11" text-anchor="middle">contents cross ONLY after the pore forms</text>
+    <text x="180" y="388" fill="#fcb5c5" font-size="10.5" font-weight="800" text-anchor="middle" class="seqr4">PORE ASSEMBLES HERE — ONE SPOT, SEVERAL COMPLEXES</text>
+    <!-- normal cell -->
+    <ellipse cx="490" cy="248" rx="110" ry="100" fill="#101221" stroke="#7f88a5" stroke-width="2.5"/>
+    <ellipse cx="490" cy="248" rx="102" ry="92" fill="none" stroke="#7f88a5" stroke-width="1" opacity=".45"/>
+    <text x="490" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">CYTOPLASM</text>
+    <ellipse cx="490" cy="262" rx="34" ry="26" fill="#0a0b14" stroke="#7f88a5" stroke-width="1.5"/>
+    <text x="490" y="266" fill="#7f88a5" font-size="10" text-anchor="middle">NUCLEUS</text>
+    <text x="490" y="366" fill="#7f88a5" font-size="11" text-anchor="middle">membrane intact · cell untouched</text>
+    <text x="490" y="388" fill="#7f88a5" font-size="11" font-weight="700" text-anchor="middle">HDM-2 stays INSIDE — no handle, no attack</text>
+  </svg><div class="cap">The proposed sequence: approach → dock on membrane HDM-2 → several complexes cluster into a pore at one spot → contents leak → necrotic lysis. The nucleus is never the entry point in this mechanism.</div></div>
+  <h3 class="sech"><span class="kicker">The pore, up close</span>How a pore forms — precisely</h3>
+  <div class="diagram reveal"><svg viewBox="0 0 640 300" role="img" aria-label="Close-up of several PNC-27 and HDM-2 complexes assembling into a transmembrane pore">
+    <text x="20" y="26" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">THE PORE, UP CLOSE</text>
+    <text x="20" y="52" fill="#7f88a5" font-size="12">EXTRACELLULAR FLUID</text>
+    <rect x="20" y="120" width="600" height="46" rx="23" fill="#141628" stroke="#fcb5c5" stroke-width="2.5"/>
+    <text x="560" y="148" fill="#a9b1c9" font-size="11" font-weight="800" text-anchor="end">PLASMA MEMBRANE</text>
+    <!-- pore gap in membrane -->
+    <rect x="280" y="112" width="80" height="62" rx="10" fill="#000" stroke="none"/>
+    <g class="porepulse">
+      <circle cx="296" cy="142" r="9" fill="#d52249" stroke="#0a0b14" stroke-width="2"/>
+      <circle cx="324" cy="142" r="9" fill="#2639f9" stroke="#0a0b14" stroke-width="2"/>
+      <circle cx="344" cy="142" r="9" fill="#d52249" stroke="#0a0b14" stroke-width="2"/>
+      <circle cx="310" cy="130" r="7" fill="#cbd0fd" stroke="#0a0b14" stroke-width="2"/>
+    </g>
+    <text x="320" y="100" fill="#fcb5c5" font-size="11" font-weight="800" text-anchor="middle" class="seqr2">PNC-27 / HDM-2 COMPLEXES</text>
+    <text x="320" y="196" fill="#fcb5c5" font-size="11" font-weight="800" text-anchor="middle" class="seqr3">TRANSMEMBRANE PORE</text>
+    <!-- leak -->
+    <g fill="#cbd0fd" opacity=".9">
+      <circle class="leak" cx="312" cy="178" r="3.5" style="animation-delay:.2s"/>
+      <circle class="leak" cx="330" cy="178" r="3.5" style="animation-delay:1.2s"/>
+      <circle class="leak" cx="321" cy="178" r="3.5" style="animation-delay:2.2s"/>
+    </g>
+    <text x="20" y="240" fill="#7f88a5" font-size="12">CYTOPLASM — contents escape only AFTER the pore exists</text>
+    <text x="20" y="280" fill="#7f88a5" font-size="12">several complexes assemble at ONE localized patch — never one giant peptide exploding the whole cell</text>
+  </svg><div class="cap">Published work proposes PNC-27/HDM-2 complexes as components of the pore structure. Pore → loss of membrane integrity → ion/solute imbalance → necrotic lysis.</div></div>
+  <h3 class="sech"><span class="kicker">Why might cancer cells be targeted?</span>The handle is the hypothesis</h3>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>The oddity</h3><p>HDM-2 normally lives <strong>inside</strong> cells, regulating p53. Its reported appearance on cancer-cell membranes is the <strong>oddity</strong> the whole trick depends on.</p></div>
+    <div class="card teal reveal"><h3>The susceptibility experiment</h3><p>Cells engineered to display <strong>membrane-localized HDM-2 became susceptible</strong> — evidence that the handle, not the cancer label, decides. Still lab evidence, not a clinical rule.</p></div>
+    <div class="card org reveal"><h3>No magic receptor</h3><p>This is <strong>not</strong> a unique cancer-only receptor normal cells entirely lack. It is a reported difference in <strong>degree and location</strong> — handle with care outside a dish.</p></div>
+  </div>
+  <h3 class="sech"><span class="kicker">A separate downstream pathway</span>Mitochondria — a different room, a different event</h3>
+  <div class="diagram reveal"><svg viewBox="0 0 640 210" role="img" aria-label="Mitochondrial membrane disruption as a separate downstream pathway, reported in 2024">
+    <rect x="14" y="14" width="612" height="182" rx="16" fill="none" stroke="#2639f9" stroke-width="2" stroke-dasharray="8 6" opacity=".7"/>
+    <text x="30" y="46" fill="#2639f9" font-size="12" font-weight="800" letter-spacing="1.5">SEPARATE PATHWAY · REPORTED 2024 · NOT THE PLASMA-MEMBRANE PORE</text>
+    <ellipse cx="180" cy="130" rx="90" ry="52" fill="#101221" stroke="#2639f9" stroke-width="2.5" class="porepulse"/>
+    <path d="M100 118 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0" fill="none" stroke="#2639f9" stroke-width="2" opacity=".8"/>
+    <text x="180" y="134" fill="#a9b1c9" font-size="11" font-weight="800" text-anchor="middle">MITOCHONDRION</text>
+    <text x="320" y="105" fill="#a9b1c9" font-size="12">mitochondrial membrane</text>
+    <text x="320" y="125" fill="#a9b1c9" font-size="12">disruption reported after</text>
+    <text x="320" y="145" fill="#a9b1c9" font-size="12">PNC-27 treatment — a <strong>downstream,</strong></text>
+    <text x="320" y="165" fill="#a9b1c9" font-size="12"><strong>separate</strong> event from the cell-surface pore.</text>
+  </svg><div class="cap">Do not mix the two: the plasma-membrane pore is the primary proposed kill mechanism; mitochondrial disruption is a separate downstream observation.</div></div>
 </section>
 <mini-poll slug="pnc27-mini-ch3"
   data-question="What matters most for a cancer peptide like this?"
@@ -646,10 +777,11 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">04</span>Evidence check</span>
   <h2>What the science <span class="hl">actually</span> supports</h2>
   <p class="lede">Cell dishes and animals. <strong>That’s the whole file.</strong></p>
-    <div class="ebar"><div class="row"><span class="t">Cancer cell killing (dishes)</span><span class="v">rapid and broad</span></div><div class="track"><div class="fill" style="--w:70%;background:linear-gradient(90deg,#f5cbfd,#fbebfe)"></div></div><div class="note">Kills many cancer cell types in culture while sparing normal cells in the same dishes — the core observation.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Pore mechanism</span><span class="v">visualized in labs</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#f1b5fc,#f5cbfd)"></div></div><div class="note">Pore formation in membranes has been directly observed — the “how” is better supported than the “so what.”</div></div>
-  <div class="ebar"><div class="row"><span class="t">Animal studies</span><span class="v">limited</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#f1b5fc,#c522d5)"></div></div><div class="note">Some tumor-shrinkage reports in animals — far from the controlled trials a drug needs.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Human trials</span><span class="v">none reported</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#211e2a,#211e2a)"></div></div><div class="note">No human safety or efficacy data exists.</div></div><div class="grid3">
+    <div class="ebar reveal"><div class="row"><span class="t">Biochemical / structural studies</span><span class="v">best-characterized</span></div><div class="track"><div class="fill" style="--w:65%;background:linear-gradient(90deg,#cbd0fd,#ebedfe)"></div></div><div class="note">PNC-27 grips membrane-associated HDM-2 through its p53-derived domain; PNC-27/HDM-2 pore complexes are the best-supported part of the story.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Cancer-cell experiments</span><span class="v">rapid and broad</span></div><div class="track"><div class="fill" style="--w:70%;background:linear-gradient(90deg,#fcb5c5,#cbd0fd)"></div></div><div class="note">Kills many cancer cell types in culture while sparing normal cells in the same dishes — the core observation.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Animal tumor studies</span><span class="v">limited</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#fcb5c5,#d52249)"></div></div><div class="note">Some tumor-shrinkage reports in animals — far from the controlled trials a drug needs.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Human clinical evidence</span><span class="v">none established</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#1e1f2a,#1e1f2a)"></div></div><div class="note">No human safety or efficacy data exists. The ladder ends here — the absence is the finding.</div></div>
+  <div class="plain reveal"><div class="plabel">Anecdotes are not a rung</div><p>Online stories do not sit on this ladder at all. Biochemical → cellular → animal → human clinical — <strong>that is the whole order</strong>, and the top rung is empty.</p></div><div class="grid3">
     <div class="card sky reveal"><h3>A dish phenomenon</h3><p>Rapid killing across cancer cell types <strong>in culture</strong> — genuinely striking, genuinely limited. Dishes lack immune systems, blood flow, and consequences.</p></div>
     <div class="card teal reveal"><h3>The distance to a drug</h3><p>The gap from dish to drug has swallowed <strong>thousands of better-funded candidates</strong>. A great mechanism is a starting line, not a finish line.</p></div>
     <div class="card org reveal"><h3>Research, not medicine</h3><p>Lab findings are <strong>not treatment options</strong>. Presenting them as hope for patients is a framing failure with real victims.</p></div>
@@ -662,9 +794,9 @@ mini-poll { display: block; }
 
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Almost nobody online has encountered PNC-27 — these are <strong>themes from the rare discussions</strong>, mostly among research-watchers.</p>
+  <span class="eyebrow"><span class="n">05</span>Community reports</span>
+  <h2>Community <span class="hl">Reports</span></h2>
+  <p class="lede">Public discussions from <strong>Reddit, forums, TikTok, and YouTube Shorts</strong>. PNC-27 has <strong>no real user community</strong> — these tiles reflect research-watcher chatter, <strong>unverified stories, not data</strong>, kept separate from the science above.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div><div class="anec-grid">
     <div class="anec reveal"><div class="anec-head"><h4>The “cure” whisper</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I heard there’s a peptide that bursts cancer cells.”</p><div class="caveat"><strong>Caveat:</strong> “bursts cancer cells <strong>in a dish</strong>” — the last three words do all the work<br><strong>Pattern:</strong> the telephone game — each retelling drops the caveats</div></div>
     <div class="anec reveal"><div class="anec-head"><h4>The mechanism awe</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Pores! Necrosis! It can’t become resistant!”</p><div class="caveat"><strong>Caveat:</strong> cancer outsmarts <strong>everything</strong> eventually<br><strong>Pattern:</strong> mechanism worship — the prettiest story wins</div></div>
@@ -676,13 +808,135 @@ mini-poll { display: block; }
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>A note on this section: PNC-27 has <strong>no real user community</strong> — these tiles reflect research-watcher chatter, not experiences. Treating lab findings like treatment options <strong>harms desperate people</strong>.</p></div>
 </section>
 <mini-poll slug="pnc27-mini-ch5"
-  data-question="How should lab-stage cancer findings be discussed online?"
-  data-answers='[["📢", "With heavy caveats"], ["🤝", "Honestly but hopefully"], ["⚠️", "Hype can harm desperate people"], ["🔬", "Stick to the data"]]'>
+  data-question="Which community-report pattern stands out to you?"
+  data-answers='[["📢", "The \u201ccure\u201d whisper"], ["🧪", "Mechanism awe"], ["❓", "The missing-trials question"], ["⚠️", "Desperation + hype"]]'>
 </mini-poll>
 
 <!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>Risks & unknowns</span>
+  <span class="eyebrow"><span class="n">06</span>Head-to-head</span>
+  <h2>PNC-27 vs the <span class="hl">usual playbook</span></h2>
+  <p class="lede">Same protein family — <strong>completely different strategy</strong>. Do not confuse the two.</p>
+  <div class="diagram reveal"><svg viewBox="0 0 640 300" role="img" aria-label="Conventional MDM2 drugs restore p53 function inside the cell, while PNC-27 forms membrane pores leading to lysis">
+    <text x="20" y="28" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">TWO WAYS TO AIM AT THE p53 / MDM2 AXIS</text>
+    <!-- track A -->
+    <text x="30" y="62" fill="#fcb5c5" font-size="12" font-weight="800">A · CONVENTIONAL MDM2 DRUGS</text>
+    <g class="seqr1">
+      <rect x="30" y="76" width="150" height="60" rx="12" fill="#000" stroke="#fcb5c5" stroke-width="2"/>
+      <text x="105" y="100" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">MDM2 suppresses</text>
+      <text x="105" y="117" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">p53 INSIDE cell</text>
+    </g>
+    <path d="M180 106 h36" stroke="#fcb5c5" stroke-width="2" fill="none" class="flowseq"/>
+    <g class="seqr2">
+      <rect x="216" y="76" width="150" height="60" rx="12" fill="#000" stroke="#fcb5c5" stroke-width="2"/>
+      <text x="291" y="100" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">drug blocks MDM2</text>
+      <text x="291" y="117" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">→ p53 wakes up</text>
+    </g>
+    <text x="30" y="158" fill="#7f88a5" font-size="11">goal: RESTORE the guardian · kill type: orderly apoptosis · status: approved drugs exist in this class</text>
+    <!-- track B -->
+    <text x="30" y="192" fill="#2639f9" font-size="12" font-weight="800">B · PNC-27 (EXPERIMENTAL)</text>
+    <g class="seqr3">
+      <rect x="30" y="206" width="150" height="60" rx="12" fill="#000" stroke="#2639f9" stroke-width="2"/>
+      <text x="105" y="230" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">membrane HDM-2</text>
+      <text x="105" y="247" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">+ peptide → PORE</text>
+    </g>
+    <path d="M180 236 h36" stroke="#2639f9" stroke-width="2" fill="none" stroke-dasharray="6 6" class="flowseq2"/>
+    <g class="seqr4">
+      <rect x="216" y="206" width="150" height="60" rx="12" fill="#000" stroke="#2639f9" stroke-width="2"/>
+      <text x="291" y="230" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">membrane bursts</text>
+      <text x="291" y="247" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">→ necrotic lysis</text>
+    </g>
+    <text x="30" y="288" fill="#7f88a5" font-size="11">goal: RIP the door off · kill type: messy necrosis · status: zero human data — lab research only</text>
+  </svg><div class="cap">Wake the guardian (conventional) vs rip the door off (PNC-27). One restores a protein's job; the other punches holes. The dashed arrow marks PNC-27's proposed, unproven-in-people path.</div></div>
+  <div class="avsb">
+    <div class="vscard reveal"><span class="vstag a">Conventional p53/MDM2 drugs</span><h3>Restore p53 function</h3><ul>
+      <li>Aim to <strong>prevent MDM2-mediated suppression</strong> of p53 inside the cell</li>
+      <li>Target is <strong>intracellular</strong>; the cell stays intact</li>
+      <li>Death is <strong>apoptosis</strong> — orderly, programmed</li>
+      <li>Some agents in this class have reached <strong>clinical testing and approval</strong></li>
+    </ul></div>
+    <div class="vscard reveal"><span class="vstag b">PNC-27 research</span><h3>Membrane-active lysis</h3><ul>
+      <li>Aims at <strong>membrane-associated HDM-2</strong> via its p53-derived binding domain</li>
+      <li>Target is <strong>on the membrane</strong>; PNC-27/HDM-2 complexes join the pore</li>
+      <li>Death is <strong>necrosis</strong> — rupture, inflammation, mess</li>
+      <li><strong>No human trials</strong> — a dish-and-animal phenomenon</li>
+    </ul></div>
+  </div>
+  <h3 class="sech"><span class="kicker">Related but not interchangeable</span>PNC-27 vs PNC-28</h3>
+  <div class="avsb">
+    <div class="vscard reveal"><span class="vstag a">PNC-27</span><h3>The pore-former</h3><ul>
+      <li>p53-derived HDM-2-binding segment + penetratin carrier</li>
+      <li>Proposed mechanism: <strong>membrane pore → necrotic lysis</strong></li>
+      <li>Studied in cancer-cell and animal models — <strong>no human data</strong></li>
+    </ul></div>
+    <div class="vscard reveal"><span class="vstag b">PNC-28</span><h3>A relative, not a twin</h3><ul>
+      <li>A <strong>related experimental peptide</strong> from the same research program</li>
+      <li>Different construct, different reported properties</li>
+      <li><strong>Not interchangeable</strong> — findings about one do not transfer to the other</li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Conventional drugs try to <strong>switch the guardian back on</strong>. PNC-27 tries to <strong>use the guardian's grip to rip the cell open</strong>. Similar vocabulary, opposite engineering — and PNC-28 is a different experiment entirely.</p></div>
+</section>
+<mini-poll slug="pnc27-mini-ch6"
+  data-question="PNC-27 vs conventional MDM2 drugs — which difference stands out?"
+  data-answers='[["🎯", "Restore p53 vs burst the cell"], ["🧬", "Inside the cell vs on the membrane"], ["⚠️", "Approved drugs vs lab-only research"], ["🧩", "PNC-27 vs PNC-28 name confusion"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Potential benefits</span>
+  <h2>The upside, <span class="hl">honestly tiered</span></h2>
+  <p class="lede">What PNC-27 might offer — sorted by <strong>how well it is actually supported</strong>. The three tiers are not equal, and the top tier is the only one with measurements behind it.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Tier 1 · Established data</h3><ul>
+      <li><strong>Rapid cancer-cell killing</strong> across many cell types in culture — the core, repeated observation</li>
+      <li><strong>Selectivity in the dish</strong> — cancer cells ruptured while normal cells in the same dishes were spared</li>
+      <li><strong>A mapped mechanism</strong> — PNC-27/HDM-2 pore complexes are the best-characterized part of the story</li>
+    </ul></div>
+    <div class="card teal reveal"><h3>Tier 2 · Predicted / emerging</h3><ul>
+      <li>A kill method most cancer drugs don't use — <strong>membrane rupture</strong> instead of reprogramming the cell</li>
+      <li>If membrane HDM-2 proves tumor-specific <strong>in people</strong>, the concept could span cancer types — entirely theoretical</li>
+      <li><strong>Limited animal tumor-shrinkage signals</strong> — far from clinical evidence</li>
+    </ul></div>
+    <div class="card org reveal"><h3>Tier 3 · Community anecdotes</h3><ul>
+      <li><strong>No real user community</strong> exists — only research-watcher chatter (the "cure whisper", "why no trials?")</li>
+      <li>Nobody can report a benefit from a compound <strong>never tested in people</strong></li>
+      <li>Online "benefit" claims are <strong>telephone-game hype</strong>, not evidence</li>
+    </ul></div>
+  </div>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Stories, not data</strong> — Tier 3 gets the pulsing-dot treatment: paraphrased forum chatter, kept strictly separate from the measured science in Tiers 1 and 2.</p></div>
+  <div class="plain reveal"><div class="plabel">Think of it this way</div><p>A new kind of <strong>demolition charge</strong> that, in test buildings, only knocks down the marked houses. Impressive blueprints and great test runs — but nobody has built it at full scale, and the "reviews" are people arguing about the blueprints.</p></div>
+</section>
+<mini-poll slug="pnc27-mini-benefits"
+  data-question="Which benefit tier carries the most weight for you?"
+  data-answers='[["🧫", "Tier 1 — lab measurements"], ["🔮", "Tier 2 — the concept"], ["📢", "Tier 3 — still just stories"], ["⏳", "None until human data"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">PNC-27 is a <strong>research compound</strong>, not a treatment — so "who it suits" means whose work or curiosity it serves, not whose condition it treats.</p>
+  <div class="grid2">
+    <div class="card sky reveal"><h3>May be relevant to…</h3><ul>
+      <li><strong>Cancer-biology researchers</strong> studying membrane targets and the p53/HDM-2 axis</li>
+      <li>Readers following <strong>early-stage oncology science</strong> — as a mechanism story, not a hope story</li>
+      <li>Anyone learning how lab findings <strong>do (or don't) become medicines</strong></li>
+    </ul></div>
+    <div class="card org reveal"><h3>Not suited to…</h3><ul>
+      <li>Anyone looking for a <strong>cancer treatment</strong> — no human data exists</li>
+      <li>Anyone considering <strong>obtaining or using</strong> research chemicals</li>
+      <li>Anyone making a medical decision — <strong>work with a licensed oncology team</strong></li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>This is <strong>general information, not personal medical advice</strong>. Research compounds live in laboratories, not clinics — relevance here means relevance to research, not to patients.</p></div>
+</section>
+<mini-poll slug="pnc27-mini-fit"
+  data-question="Who is this page really for?"
+  data-answers='[["🔬", "Research watchers"], ["🧑‍⚕️", "Future patients — maybe"], ["📚", "The curious"], ["⚠️", "No one — yet"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks & <span class="hl">unknowns</span></h2>
   <p class="lede">With cancer in the frame, the risk conversation includes <strong>the hype itself</strong> — not just the molecule.</p>
   <div class="safety-grid">
@@ -694,84 +948,73 @@ mini-poll { display: block; }
     <div class="scard lvl-unknown reveal"><span class="level">Unknown</span><h4>Desperation exploitation</h4><p><strong>Unknown:</strong> how many vulnerable patients encounter hype as hope — unmeasurable, but real.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>The risk file has two entries: <strong>the molecule is unproven</strong>, and <strong>the hype around it can hurt people</strong> who mistake research for treatment.</p></div>
 </section>
-<mini-poll slug="pnc27-mini-ch6"
+<mini-poll slug="pnc27-mini-ch9"
   data-question="Biggest risk?"
   data-answers='[["🩸", "Harming healthy cells"], ["🔥", "Inflammation from ruptured cells"], ["📢", "False hope"], ["❓", "All of it"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">p53</span></h2>
-  <p class="lede">Eleven terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">PNC-27</span> Terminology</h2>
+  <p class="lede">Eleven terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#f1b5fc" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#f1b5fc"/></svg><span class="term">PNC-27</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>An experimental peptide fusing a p53-derived HDM-2-binding segment to the penetratin carrier; forms pores in cancer cell membranes in lab studies.</p>
-      <p class="gex"><span class="gslabel">Example</span>The peptide this page is about — a lab-dish phenomenon, not a medicine.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A two-part lab peptide that pops cancer cells in dishes.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#fcb5c5" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#fcb5c5"/></svg><span class="term">PNC-27</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>An experimental chimeric peptide combining two segments: a p53-derived sequence that binds the protein HDM-2, and penetratin, a carrier peptide that crosses cell membranes. In laboratory studies it binds HDM-2 found abnormally in the outer membranes of cancer cells, where multiple copies assemble into pores that rupture the membrane. The result is necrotic cell death — observed in cell cultures and animal models, never in humans. PNC-27 is a research compound, not a medicine.</p>
+      <div class="plain"><span class="plabel">Plain English</span>PNC-27 is a lab-built peptide made of two parts stitched together: one part that grips a protein called HDM-2, and one part that ferries it across cell membranes. In lab dishes, it latches onto HDM-2 sitting in cancer cells’ outer walls, teams up to punch holes in them, and the cells burst. That’s the whole story — dishes and animals, never people. It is a research phenomenon, not a treatment.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#f5cbfd" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#f5cbfd" stroke-width="2.5"/></svg><span class="term">p53</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>“Guardian of the genome” — the tumor-suppressor protein that orders damaged cells to self-destruct; mutated in most cancers.</p>
-      <p class="gex"><span class="gslabel">Example</span>The donor — PNC-27 borrows its HDM-2 grip.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The cell’s cancer guardian.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#cbd0fd" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#cbd0fd" stroke-width="2.5"/></svg><span class="term">p53</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A tumor-suppressor protein often called the “guardian of the genome.” When DNA is damaged, p53 can halt cell division, order repairs, or trigger the cell’s self-destruction — preventing damaged cells from becoming cancerous. It is mutated or inactivated in most human cancers, which is why losing p53 is so dangerous. PNC-27 borrows a short p53-derived segment as its HDM-2-binding grip.</p>
+      <div class="plain"><span class="plabel">Plain English</span>p53 is the cell’s cancer guardian — a protein that watches for damaged DNA and orders the cell to stop dividing, repair itself, or self-destruct before the damage turns cancerous. Most cancers have a broken p53, which is exactly why they’re so hard to stop. PNC-27 borrows a small piece of p53’s shape — the part that grips HDM-2 — and uses it as its handle on cancer cells.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><path d="M10 24h28M24 10v28" fill="none" stroke="#c522d5" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">HDM-2</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A protein that regulates p53 inside cells; abnormally found in the outer membranes of many cancer cells in lab studies.</p>
-      <p class="gex"><span class="gslabel">Example</span>The handle — the oddity the peptide latches onto.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A protein in the wrong place — which makes it a target.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><path d="M10 24h28M24 10v28" fill="none" stroke="#d52249" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">HDM-2</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A protein that regulates p53 inside healthy cells, primarily by tagging it for degradation once its job is done — keeping the guardian on a leash. In laboratory studies of many cancer cell lines, HDM-2 has been found abnormally present in the outer cell membrane, where it does not belong. That misplaced HDM-2 is the handle PNC-27 latches onto, and its presence on cancer cells but not normal cells is the proposed basis for the peptide’s selectivity.</p>
+      <div class="plain"><span class="plabel">Plain English</span>HDM-2 is p53’s manager — in healthy cells it tags the guardian protein for disposal when its work is finished, keeping it under control. But lab studies found HDM-2 sitting in the outer membranes of many cancer cells, where it has no business being. That out-of-place protein is the handle PNC-27 grabs. Since normal cells don’t display it there, the misplacement is the whole basis for aiming at cancer cells specifically.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#f1b5fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Penetratin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A 16-amino-acid carrier peptide (from a fruit-fly protein) that ferries cargo across cell membranes.</p>
-      <p class="gex"><span class="gslabel">Example</span>The delivery truck — the rope tied to the grappling hook.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A molecular smuggler that crosses cell walls.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#fcb5c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Penetratin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A 16-amino-acid cell-penetrating peptide derived from the antennapedia protein of the fruit fly Drosophila. Cell-penetrating peptides can cross cell membranes, carrying attached cargo with them — a property researchers exploit for drug delivery. In PNC-27, penetratin is the carrier segment fused to the p53-derived HDM-2-binding segment, enabling the combined molecule to reach membranes.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Penetratin is a 16-piece peptide originally found in a fruit-fly protein, with a rare talent: it can slip across cell membranes, dragging cargo along with it. Scientists use such carriers to smuggle molecules into cells. In PNC-27, penetratin is the delivery half — the part that gets the p53-derived grip where it needs to go.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M24 8l14 24H10z" fill="none" stroke="#f5cbfd" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#f5cbfd"/></svg><span class="term">Pore formation</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The assembly of peptide clusters into holes through a cell membrane — PNC-27’s observed kill mechanism.</p>
-      <p class="gex"><span class="gslabel">Example</span>The demolition method — punching holes, not giving orders.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Drilling holes in a cell’s skin until it bursts.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M24 8l14 24H10z" fill="none" stroke="#cbd0fd" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#cbd0fd"/></svg><span class="term">Pore formation</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The process by which multiple peptide molecules insert into a cell membrane and assemble into a ring-shaped channel through it. Once formed, the pore destroys the membrane’s barrier function: ions and molecules flow freely, and the cell cannot maintain its internal environment. Pore formation is the observed kill mechanism of PNC-27 — a physical demolition, not a biochemical signal.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Pore formation is what happens when peptide molecules team up, insert themselves into a cell’s membrane, and link into a ring — a hole straight through the cell’s skin. Once the hole is open, the cell can’t keep its insides in or its outsides out, and it dies. That’s PNC-27’s kill method: not a chemical message, but physical demolition.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#c522d5" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Necrosis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Messy cell death by rupture — spilling contents and triggering inflammation, unlike orderly apoptosis.</p>
-      <p class="gex"><span class="gslabel">Example</span>The kill type — fast, violent, inflammatory.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A cell bursting messily instead of shutting down tidily.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#d52249" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Necrosis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A form of cell death caused by acute injury — the cell swells, its membrane ruptures, and its contents spill into the surrounding tissue. The spilled contents trigger inflammation, which can damage neighboring cells. Necrosis is the messy counterpart to apoptosis, the orderly programmed death; PNC-27 kills by necrosis, via membrane pores.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Necrosis is messy cell death — the cell swells up and bursts, spilling its contents into the neighborhood and setting off inflammation. It’s the opposite of apoptosis, the tidy programmed shutdown. PNC-27 kills by necrosis: it punches holes in the membrane until the cell ruptures. Fast and violent, as cell death goes.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#f1b5fc" stroke-width="2.5"/><path d="M18 24h12" stroke="#f1b5fc" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Apoptosis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Programmed cell death — orderly self-dismantling, the kill method of most cancer drugs.</p>
-      <p class="gex"><span class="gslabel">Example</span>The contrast — what PNC-27 does <strong>not</strong> trigger.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Cellular seppuku — tidy self-destruction.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#fcb5c5" stroke-width="2.5"/><path d="M18 24h12" stroke="#fcb5c5" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Apoptosis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Programmed cell death — the orderly, energy-dependent process by which a cell dismantles itself from within, packaging its remains for cleanup by immune cells. It is a normal part of development and tissue maintenance, and the intended kill mechanism of most cancer drugs. PNC-27 does not trigger apoptosis; its pore-driven killing is necrotic instead.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Apoptosis is a cell’s tidy self-destruction program — it takes itself apart from the inside in an orderly way so immune cells can sweep up the pieces. It’s a normal part of how bodies maintain themselves, and most cancer drugs try to trigger it. PNC-27 doesn’t. Its pore-punching method kills by rupture — necrosis — not by this neat program.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#f5cbfd" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#f5cbfd"/><circle cx="34" cy="34" r="3" fill="#f5cbfd"/></svg><span class="term">Membrane</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The cell’s outer skin — a fatty barrier whose integrity is life or death.</p>
-      <p class="gex"><span class="gslabel">Example</span>The battlefield — where the pores open.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A cell’s skin — breach it and the cell dies.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#cbd0fd" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#cbd0fd"/><circle cx="34" cy="34" r="3" fill="#cbd0fd"/></svg><span class="term">Membrane</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The cell’s outer boundary — a double layer of lipid molecules that separates the cell’s interior from its environment. The membrane controls what enters and exits; its integrity is quite literally the difference between a living cell and a dead one. PNC-27’s entire mechanism plays out at the membrane, which is why the peptide never needs to reach the cell’s nucleus.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A cell’s membrane is its skin — a thin double layer of fat molecules that separates inside from outside and controls what passes through. Keep it intact and the cell lives; breach it and the cell dies. That’s why PNC-27’s whole attack happens right at the membrane — it never needs to go deeper.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><circle cx="24" cy="24" r="11" fill="none" stroke="#c522d5" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#c522d5"/></svg><span class="term">Selectivity</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Hitting only the intended target — the unproven bet everything rests on.</p>
-      <p class="gex"><span class="gslabel">Example</span>The whole trick — shown in dishes, unknown in bodies.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Only hitting cancer cells — the claim needing proof.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c522d522"/><circle cx="24" cy="24" r="11" fill="none" stroke="#d52249" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#d52249"/></svg><span class="term">Selectivity</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>In pharmacology, the degree to which a treatment affects its intended target while sparing everything else — the difference between a drug and a poison. PNC-27’s proposed selectivity rests on HDM-2 appearing in cancer-cell membranes but not normal-cell membranes in lab studies. That selectivity has been shown only in dishes; whether it holds in a living body is entirely unproven.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Selectivity is hitting only what you aim at — the difference between a medicine and a poison. PNC-27’s aim depends on cancer cells displaying HDM-2 in their membranes while normal cells don’t. In lab dishes, that pattern held. In a living body, nobody knows — and “shown in dishes, unknown in bodies” is where the claim has to stay until proven otherwise.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#f1b5fc" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#f1b5fc" stroke-width="2.5"/></svg><span class="term">Tumor suppressor</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A protein (like p53) that restrains cell growth and stops tumors forming.</p>
-      <p class="gex"><span class="gslabel">Example</span>p53’s day job — the credibility PNC-27 borrows.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The brakes on cell growth.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f1b5fc22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fcb5c5" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fcb5c5" stroke-width="2.5"/></svg><span class="term">Tumor suppressor</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A protein — or the gene encoding it — that restrains cell growth and division, acting as a brake against tumor formation. Tumor suppressors halt the cell cycle, repair DNA, or trigger cell death when things go wrong. p53 is the most famous example, and its name is the credibility PNC-27’s design borrows.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A tumor suppressor is one of the body’s brakes on cell growth — a protein that stops cells from dividing recklessly and turning into tumors. p53 is the most famous one, the “guardian of the genome.” PNC-27’s design borrows p53’s reputation by using a piece of its shape — but borrowing the shape isn’t the same as having the guardian’s powers.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#f5cbfd" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Research before human trials — where every PNC-27 result lives.</p>
-      <p class="gex"><span class="gslabel">Example</span>The entire file — dishes, animals, and careful papers.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Lab and animal studies — promising, not proof.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5cbfd22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#cbd0fd" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Research conducted before any human trials — experiments in cell cultures and animal models. Preclinical work can reveal a mechanism and screen for obvious harms, but it cannot prove that a compound is safe or effective in people. Every result ever reported for PNC-27 — the pore formation, the selective killing, the animal data — lives at this stage.</p>
+      <div class="plain"><span class="plabel">Plain English</span>“Preclinical” means everything happened before any human was involved — cells in dishes, animals in labs. It can show how something works and flag obvious dangers, but it can’t prove safety or benefit in people. For PNC-27, the entire file is preclinical: the pores, the selective killing, all of it. Promising in the lab is not the same as proven in a body.</div>
     </div></div>
   </div>
 </section>
-<mini-poll slug="pnc27-mini-ch7"
+<mini-poll slug="pnc27-mini-ch10"
   data-question="Which term was newest to you?"
   data-answers='[["🛡️", "p53"], ["🎯", "HDM-2"], ["💥", "Necrosis"], ["🧩", "Penetratin"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. A clever lab phenomenon with a violent mechanism — and a bright line between research and treatment that must not be blurred.</p>
+  <p class="lede">Eleven chapters, distilled. A clever lab phenomenon with a violent mechanism — and a bright line between research and treatment that must not be blurred.</p>
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧩</div><h4>Two parts, one trick</h4><p>A <strong>p53 grip</strong> plus a <strong>membrane carrier</strong> — built to find HDM-2 on cancer membranes.</p></div>
     <div class="take reveal"><div class="tk">💥</div><h4>Bursts, doesn’t persuade</h4><p>Forms <strong>pores</strong> — cancer cells rupture (necrosis), a different kill than most drugs.</p></div>
@@ -792,7 +1035,8 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="pnc27-mini-ch8"
+<h3 class="rate-h">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="pnc27-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -815,6 +1059,7 @@ mini-poll { display: block; }
 (function(){
 "use strict";
 var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(reduced){document.querySelectorAll("svg").forEach(function(s){if(s.pauseAnimations){try{s.pauseAnimations();}catch(e){}}});}
 /* ---------- theme ---------- */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme",t);
@@ -835,7 +1080,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#f1b5fc", "#b620c5", "#f5cbfd", "#a21caf", "#c522d5", "#f1b5fc"];
+  var colors=["#fcb5c5", "#c52044", "#cbd0fd", "#af1c3c", "#d52249", "#fcb5c5"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -885,7 +1130,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
       var l=document.createElementNS(NS,"line");
       l.setAttribute("x1",x.toFixed(1));l.setAttribute("y1",yy.toFixed(1));
       l.setAttribute("x2",x2.toFixed(1));l.setAttribute("y2",yy2.toFixed(1));
-      l.setAttribute("stroke","#211e2a");l.setAttribute("stroke-width","3");
+      l.setAttribute("stroke","#1e1f2a");l.setAttribute("stroke-width","3");
       g.insertBefore(l,g.firstChild);
     }
   }
@@ -942,7 +1187,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1", "ch2", "ch3", "ch4", "ch5", "ch6", "ch7", "ch8", "ch9", "ch10", "ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -985,7 +1230,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#f1b5fc", "#f5cbfd", "#c522d5", "#fbbf24", "#edf0f9"],parts=[];
+  var cols=["#fcb5c5", "#cbd0fd", "#d52249", "#2639f9", "#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1021,12 +1266,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#f1b5fc", "#f5cbfd", "#ba21c8", "#a21caf", "#c522d5", "#f8d8fe", "#fbbf24", "#3b0764", "#7a2582"] };
+  accents: ["#fcb5c5", "#cbd0fd", "#c82145", "#af1c3c", "#d52249", "#d8dcfe", "#2639f9", "#070f64", "#822539"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="pnc27-mini-ch1"
+     <mini-poll slug="pnc27-mini-recap"
        data-question="Had you heard of PNC-27 before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1105,8 +1350,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#b145ee', '#f9a2d1',
-                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#7682fb', '#a3e635', '#3d4efa', '#ee456a', '#f9a2b5',
+                 '#a3e635', '#2639f9', '#fb718f', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
